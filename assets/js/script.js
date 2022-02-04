@@ -23,11 +23,45 @@ var secLeft = 60;
 // Q&A for quiz in popQ function
 var popQ = [
     {
-        question:
-        answer:{
+        question:"Pick the one thing JavaScript can't do:",
+        answer: {
+            a: "Fly Drones",
+            b: "Animate Websites",
+            c: "Bake A Cake",
+            d: "Make Serverless Websites",
         },
-        rightAnswer: 
-    }
+        rightAnswer: "c. Bake A Cake" 
+    },
+    {
+        question:"Which one of these comparison operators is incorrect:",
+        answer: {
+            a: "NaN === NaN // -> false",
+            b: "{} >= {} // -> true",
+            c: "{} = {} // -> true",
+            d: "{} === {} // -> false",
+        },
+        rightAnswer: "c: {} = {} // -> true"
+    },
+    {
+        question:"What does NaN stand for?",
+        answer: {
+            a: "Not A Name",
+            b: "Not A Noun",
+            c: "Not A Number",
+            d: "Not a Newt",
+        },
+        rightAnswer: "c. Not A Number"
+    },
+    {
+        question:"What year was JavaScript created?",
+        answer: {
+            a: "1986",
+            b: "1995",
+            c: "2001",
+            d: "1999",
+        },
+        rightAnswer: "b. 1995" 
+    },
 ];
 
 
@@ -41,10 +75,10 @@ popQ();
 
 function popQ () {
     question.textContent = promptQ[counter].question;
-    question.textContent = promptQ[counter].answer.one;
-    question.textContent = promptQ[counter].answer.two;
-    question.textContent = promptQ[counter].answer.three;
-    question.textContent = promptQ[counter].answer.four;
+    question.textContent = promptQ[counter].answer.a;
+    question.textContent = promptQ[counter].answer.b;
+    question.textContent = promptQ[counter].answer.c;
+    question.textContent = promptQ[counter].answer.d;
 
 }
 
