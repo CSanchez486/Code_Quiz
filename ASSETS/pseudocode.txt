@@ -1,0 +1,11 @@
+1. click start button > timer starts & question pops up
+
+2. answer question > press enter then new q pops up
+3. wrong answer > time subtracted
+4. game is done:
+    - when all questions are answers or
+    - timer reaches zero
+5. after game: 
+    - scoreboard
+    - can add initials
+    - can view score
