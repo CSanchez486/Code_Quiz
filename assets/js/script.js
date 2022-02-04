@@ -110,21 +110,41 @@ function popQ () {
     opt3.textContent = promptQ[counter].answer.c;
     opt4.textContent = promptQ[counter].answer.d;
 
-// when answer button is clicked then it will prompt nextQ to run
-answerBtn.onclick = function(event) {
-    target = event.target;
-    if (target.className !== "answerBtn") {
-        return;
-    } else {
-        nextQ();
+    // when answer button is clicked then it will prompt nextQ to run
+    answerBtn.onclick = function(event) {
+        target = event.target;
+        if (target.className !== "answerBtn") {
+            return;
+        } else {
+            nextQ();
+        }
     }
-}
+
+    // value = answer for the button & will be used to compare the target value
+    opt1.setAttribute("value", promptQ[counter].answer.a);
+    opt2.setAttribute("value", promptQ[counter].answer.b);
+    opt3.setAttribute("value", promptQ[counter].answer.c);
+    opt4.setAttribute("value", promptQ[counter].answer.d);
 
 // function after question is answered and next question is prompted
 function nextQ () {
-    // if
+    // if the value of the answer is compared to the chosen answer
     if(target.value === promptQ[counter].rightAnswer){
+        // if the answer is right then Huzzah will pop up for 2 seconds
+        huzzah.className = "";
+        setTimeout(function() {
+            // after the 2 seconds then huzzah is hidden
+            huzzah.className = "hidden"
+        }, 2000)
 
+    } else {
+        // value compares answer that was chosen
+        goshDarn.className = "";
+        // if answer is wrong then gosh darn will show up for 2 seconds
+        setTimeout(function() {
+            // after the 2 seconds then gosh darn is hidden
+            goshDarn.className = "hidden"
+        }, 2000)
     }
 }
 
