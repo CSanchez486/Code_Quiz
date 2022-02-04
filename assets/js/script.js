@@ -19,17 +19,36 @@ var goshDarn = document.getElementById("goshDarn");
 //setup for timer
 var timerEl = document.querySelector(".timer");
 var timerInterval;
+var secLeft = 60;
+// Q&A for quiz in popQ function
+var popQ = [
+    {
+        question:
+        answer:{
+        },
+        rightAnswer: 
+    }
+];
 
-
-// timer will countdown from 30 secs
-function timer() {
-    var secLeft = 60;
-}
 
 // onclick section
 
 // will start time when button is stat button is clicked
 startBtn.addEventListener("click, startTime");
+
+// call function - questions will start to populate once time starts
+popQ();
+
+function popQ () {
+    question.textContent = promptQ[counter].question;
+    question.textContent = promptQ[counter].answer.one;
+    question.textContent = promptQ[counter].answer.two;
+    question.textContent = promptQ[counter].answer.three;
+    question.textContent = promptQ[counter].answer.four;
+
+}
+
+
 
 
 
