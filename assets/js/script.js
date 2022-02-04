@@ -145,7 +145,10 @@ function nextQ () {
             // after the 2 seconds then gosh darn is hidden
             goshDarn.className = "hidden"
         }, 2000)
+        // 10 seconds are deucted when the answer is wrong.
+        secLeft -= 10;
     }
+    
 }
 
 }
