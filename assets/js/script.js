@@ -1,2 +1,4 @@
-//links timeEl to index.html
-var timeEl = document.querySelector(".time")
+//links timerEl to index.html
+var timerEl = document.querySelector(".timer")
+
+v
