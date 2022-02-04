@@ -73,17 +73,6 @@ startBtn.addEventListener("click, startTime");
 // call function - questions will start to populate once time starts
 popQ();
 
-function popQ () {
-    question.textContent = promptQ[counter].question;
-    question.textContent = promptQ[counter].answer.a;
-    question.textContent = promptQ[counter].answer.b;
-    question.textContent = promptQ[counter].answer.c;
-    question.textContent = promptQ[counter].answer.d;
-
-}
-
-
-
 
 
 
@@ -110,4 +99,33 @@ function setTime() {
 // CREATE FUNcTION FOR scoredQ - needs to score answers
         }
     )
+}
+
+
+
+function popQ () {
+    question.textContent = promptQ[counter].question;
+    opt1.textContent = promptQ[counter].answer.a;
+    opt2.textContent = promptQ[counter].answer.b;
+    opt3.textContent = promptQ[counter].answer.c;
+    opt4.textContent = promptQ[counter].answer.d;
+
+// when answer button is clicked then it will prompt nextQ to run
+answerBtn.onclick = function(event) {
+    target = event.target;
+    if (target.className !== "answerBtn") {
+        return;
+    } else {
+        nextQ();
+    }
+}
+
+// function after question is answered and next question is prompted
+function nextQ () {
+    // if
+    if(target.value === promptQ[counter].rightAnswer){
+
+    }
+}
+
 }
