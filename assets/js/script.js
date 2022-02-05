@@ -21,7 +21,7 @@ var timerEl = document.querySelector(".timer");
 var timerInterval;
 var secLeft = 60;
 // Q&A for quiz in popQ function
-var questions = [
+var promptQ = [
     {
         question:"Pick the one thing JavaScript can't do:",
         answer: {
@@ -68,10 +68,14 @@ var questions = [
 // onclick section
 
 // will start time when button is stat button is clicked
-startBtn.addEventListener("click, startTime");
+startBtn.addEventListener("click", startClick);
 
 // call function - questions will start to populate once time starts
 popQ();
+
+// initials can be added to the scoreboard on click
+initials.onclick = savedS;
+
 
 
 
@@ -153,9 +157,9 @@ function nextQ () {
 
 // game functionality: - out of Q then game is over
 // increment operator will cause questions to go to the next one
-next++;
+counter++;
 
-if(next++ === quizQuestions.length){
+if(counter++ === quizQuestions.length){
     clearInterval(timerInterval);
     setTimeout(scoredQ, 1000);
 } else {
@@ -177,3 +181,7 @@ function savedS(){
     score = secLeft;   
 }
 // show score
+function showScore(){
+    scored = document.getElementById("score")
+}
+

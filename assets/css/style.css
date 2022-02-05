@@ -41,6 +41,9 @@ h3 {
     display: block;
     
 }
+#opt1 {
+    color: hotpink;
+}
 
 #huzzah, #goshDarn {
     color: grey,
