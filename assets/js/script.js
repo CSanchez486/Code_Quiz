@@ -9,6 +9,7 @@ var scoreBoard = document.getElementById("scoreBoard");
 
 // quiz section
 var answerBtn = document.getElementById("answerBtn");
+var question = document.getElementById("question");
 var opt1 = document.getElementById("opt1");
 var opt2 = document.getElementById("opt2");
 var opt3 = document.getElementById("opt3");
