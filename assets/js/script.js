@@ -80,9 +80,6 @@ popQ();
 initials.onclick = savedS;
 
 
-
-
-
 // function section
 // timer starts on click
 function startClick() {
@@ -120,13 +117,13 @@ function popQ () {
 
     // when answer button is clicked then it will prompt nextQ to run
 
-    answerBtn.addEventListener("click",  function(event) {
-        target = event.target;
-        if (target.className !== "answerBtn") {
-            return;
-        } else {
-            nextQ();
-        }
+    // answerBtn.addEventListener("click",  function(event) {
+    //     target = event.target;
+    //     if (target.className !== "answerBtn") {
+    //         return;
+    //     } else {
+    //         nextQ();
+    //     }
 
     // value = answer for the button & will be used to compare the target value
     opt1.setAttribute("value", promptQ[counter].answer.a);
@@ -189,4 +186,4 @@ function savedS(){
 //     initials: initials,
 //     score: score;
 // };
-    })}
+    }

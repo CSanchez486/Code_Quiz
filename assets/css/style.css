@@ -32,7 +32,7 @@ h3 {
     display:none;
 }
 
-#startBtn, .answerBtn, #questionBtn, #initialBtn {
+.answerBtn, #initialBtn {
     background-color: cornflowerblue;
     border-radius: 5px;
     padding: 5px 15px;
@@ -41,6 +41,15 @@ h3 {
     display: block;
     
 }
+/* #startBtn */
+#questionBtn {
+background-color: rgb(219, 154, 198);
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 15px;
+    margin: 10px;
+}
+
 #opt1 {
     /* color: hotpink; */
 }
