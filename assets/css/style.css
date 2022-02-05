@@ -32,7 +32,7 @@ h3 {
     display:none;
 }
 
-#startBtn, .answerBtn, .questionBtn {
+#startBtn, .answerBtn, #questionBtn {
     background-color: cornflowerblue;
     border-radius: 5px;
     padding: 5px 15px;
@@ -42,7 +42,7 @@ h3 {
     
 }
 #opt1 {
-    color: hotpink;
+    /* color: hotpink; */
 }
 
 #huzzah, #goshDarn {

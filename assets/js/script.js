@@ -119,14 +119,24 @@ function popQ () {
     opt4.textContent = promptQ[counter].answer.d;
 
     // when answer button is clicked then it will prompt nextQ to run
-    answerBtn.onclick = function(event) {
+
+    function questionBtn {
         target = event.target;
-        if (target.className !== "answerBtn") {
-            return;
-        } else {
-            nextQ();
-        }
+    //     if (target.className !== "answerBtn") {
+    //         return;
+    //     } else {
+    //         nextQ();
+    //     }
     }
+
+    // answerBtn.onclick = function(event) {
+    //     target = event.target;
+    //     if (target.className !== "answerBtn") {
+    //         return;
+    //     } else {
+    //         nextQ();
+    //     }
+    // }
 
     // value = answer for the button & will be used to compare the target value
     opt1.setAttribute("value", promptQ[counter].answer.a);
@@ -173,7 +183,7 @@ if(counter++ === quizQuestions.length){
 // score quiz
 function scored() {
     // score equals the seconds that are left
-    score = secLeft*7;
+    score = secLeft;
     var finalScore = document.getElementById("finalScore");
     finalScore.innerHTML =score;
 }
