@@ -8,6 +8,7 @@ var score = document.getElementById("score");
 var scoreBoard = document.getElementById("scoreBoard");
 
 // quiz section
+var questionBtn = document.getElementById("questionBtn");
 var answerBtn = document.getElementById("answerBtn");
 var question = document.getElementById("question");
 var opt1 = document.getElementById("opt1");
@@ -18,6 +19,7 @@ var opt4 = document.getElementById("opt4");
 var huzzah = document.getElementById("huzzah");
 var goshDarn = document.getElementById("goshDarn");
 //setup for timer
+var counter = 0;
 var timerEl = document.querySelector(".timer");
 var timerInterval;
 var secLeft = 60;
@@ -108,8 +110,9 @@ function setTime() {
 
 
 
+
 function popQ () {
-    question.textContent = promptQ[counter].question;
+    // question.textContent = promptQ[counter].question;
     opt1.textContent = promptQ[counter].answer.a;
     opt2.textContent = promptQ[counter].answer.b;
     opt3.textContent = promptQ[counter].answer.c;
