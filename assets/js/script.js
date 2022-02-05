@@ -21,7 +21,7 @@ var timerEl = document.querySelector(".timer");
 var timerInterval;
 var secLeft = 60;
 // Q&A for quiz in popQ function
-var popQ = [
+var questions = [
     {
         question:"Pick the one thing JavaScript can't do:",
         answer: {
@@ -152,7 +152,22 @@ function nextQ () {
 }
 
 // game functionality: - out of Q then game is over
+// increment operator will cause questions to go to the next one
+next++;
+
+if(next++ === quizQuestions.length){
+    clearInterval(timerInterval);
+    setTimeout(scoredQ, 1000);
+} else {
+    popQ();
+}
 
 // score quiz
+function scored() {
+    // score equals the seconds that are left
+    score = secLeft*7;
+    var finalScore = document.getElementById("finalScore");
+    finalScore.innerHTML =score;
+}
 
 // save score
