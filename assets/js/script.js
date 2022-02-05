@@ -120,23 +120,13 @@ function popQ () {
 
     // when answer button is clicked then it will prompt nextQ to run
 
-    function questionBtn {
+    answerBtn.addEventListener("click",  function(event) {
         target = event.target;
-    //     if (target.className !== "answerBtn") {
-    //         return;
-    //     } else {
-    //         nextQ();
-    //     }
-    }
-
-    // answerBtn.onclick = function(event) {
-    //     target = event.target;
-    //     if (target.className !== "answerBtn") {
-    //         return;
-    //     } else {
-    //         nextQ();
-    //     }
-    // }
+        if (target.className !== "answerBtn") {
+            return;
+        } else {
+            nextQ();
+        }
 
     // value = answer for the button & will be used to compare the target value
     opt1.setAttribute("value", promptQ[counter].answer.a);
@@ -167,13 +157,13 @@ function nextQ () {
         secLeft -= 10;
     }   
 }
-}
+
 
 // game functionality: - out of Q then game is over
 // increment operator will cause questions to go to the next one
 counter++;
 
-if(counter++ === quizQuestions.length){
+if(counter++ === promptQ.length){
     clearInterval(timerInterval);
     setTimeout(scoredQ, 1000);
 } else {
@@ -195,7 +185,8 @@ function savedS(){
     score = secLeft;   
 }
 // show score
-function showScore(){
-    scored = document.getElementById("score")
-}
-
+// function showScore(){
+//     initials: initials,
+//     score: score;
+// };
+    })}
