@@ -170,4 +170,10 @@ function scored() {
     finalScore.innerHTML =score;
 }
 
-// save score
+// save score & initials
+function savedS(){
+    highS =JSON.parse(localStorage.getItem(highS) || []);
+    var initials = document.getElementById("initials").value; 
+    score = secLeft;   
+}
+// show score
