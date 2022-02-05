@@ -145,10 +145,14 @@ function nextQ () {
             // after the 2 seconds then gosh darn is hidden
             goshDarn.className = "hidden"
         }, 2000)
-        // 10 seconds are deucted when the answer is wrong.
+        // 10 seconds are deducted when the answer is wrong.
         secLeft -= 10;
-    }
-    
+    }   
+}
 }
 
-}
+// game functionality: - out of Q then game is over
+
+// score quiz
+
+// save score

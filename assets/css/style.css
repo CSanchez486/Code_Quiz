@@ -1,0 +1,42 @@
+header {
+    height: 30px;
+    display: flex;
+    margin: 0px, 15px;
+    color: navy;
+    text-align: center;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+div {
+    margin: 20pix;
+    width:700px;
+}
+
+h1 {
+    align-content: center;
+}
+
+h3 {
+    font-size: 75%;
+}
+
+/* this will keep Huzzah & Gosh Darn hidden*/
+.hidden {
+    display:none;
+}
+
+#startBtn, .answerBtn {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+
+
+
