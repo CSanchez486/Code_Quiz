@@ -83,9 +83,9 @@ initials.onclick = savedS;
 // function section
 // timer starts on click
 function startClick() {
-    setTime();
+    setTime(),
     // gamePg gets hidden on click and the quiz will pop up
-    gamePg.className="hidden";
+    gamePg.className="hidden",
     quiz.className="";
 }
 
